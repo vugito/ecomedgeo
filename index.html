@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leech Conference 2026 — International Online Conference</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">LeechConf 2026</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#organizers">Organizers</a></li>
+    <li><a href="#participants">Participants</a></li>
+    <li><a href="#tech">Technical</a></li>
+    <li><a href="#collaborators">Collaborators</a></li>
+    <li><a href="#program">Program</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <img class="hero-bg-img" src="images/bg1.png" alt="" aria-hidden="true">
+  <div class="hero-bg"></div>
+  <div class="hero-ornament">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="200" cy="200" rx="80" ry="180" fill="none" stroke="white" stroke-width="1"/>
+      <ellipse cx="200" cy="200" rx="60" ry="140" fill="none" stroke="white" stroke-width="0.5"/>
+      <ellipse cx="200" cy="200" rx="40" ry="100" fill="none" stroke="white" stroke-width="0.5"/>
+      <line x1="200" y1="20" x2="200" y2="380" stroke="white" stroke-width="0.5"/>
+      <line x1="120" y1="200" x2="280" y2="200" stroke="white" stroke-width="0.5"/>
+      <circle cx="200" cy="200" r="4" fill="white"/>
+      <circle cx="200" cy="80" r="3" fill="white"/>
+      <circle cx="200" cy="320" r="3" fill="white"/>
+      <!-- segment marks -->
+      <line x1="195" y1="110" x2="205" y2="110" stroke="white" stroke-width="0.8"/>
+      <line x1="195" y1="140" x2="205" y2="140" stroke="white" stroke-width="0.8"/>
+      <line x1="195" y1="165" x2="205" y2="165" stroke="white" stroke-width="0.8"/>
+      <line x1="195" y1="235" x2="205" y2="235" stroke="white" stroke-width="0.8"/>
+      <line x1="195" y1="260" x2="205" y2="260" stroke="white" stroke-width="0.8"/>
+      <line x1="195" y1="290" x2="205" y2="290" stroke="white" stroke-width="0.8"/>
+      <circle cx="200" cy="200" r="150" fill="none" stroke="white" stroke-width="0.3" stroke-dasharray="4 8"/>
+      <circle cx="200" cy="200" r="190" fill="none" stroke="white" stroke-width="0.2" stroke-dasharray="2 12"/>
+    </svg>
+  </div>
+
+  <p class="hero-tag">International Online Scientific Conference · May 8, 2026</p>
+  <h1 class="hero-title">
+    <em>Leeches:</em> Role in Biodiversity,<br>
+    Ecological Functions &amp; Medical‑Zoological<br>
+    Significance
+  </h1>
+  <p class="hero-subtitle">
+    A gathering of the world's leading researchers in annelid biology,
+    freshwater ecology, and biomedical science.
+  </p>
+
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Date</span>
+      <span class="hero-meta-value">May 8, 2026</span>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Format</span>
+      <span class="hero-meta-value">Fully Online</span>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Platform</span>
+      <span class="hero-meta-value">Zoom</span>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Language</span>
+      <span class="hero-meta-value">English</span>
+    </div>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-wrapper">
+    <p class="countdown-label">Conference begins in</p>
+    <div class="countdown">
+      <div class="countdown-block">
+        <span class="countdown-num" id="cd-days">00</span>
+        <span class="countdown-unit">Days</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-block">
+        <span class="countdown-num" id="cd-hours">00</span>
+        <span class="countdown-unit">Hours</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-block">
+        <span class="countdown-num" id="cd-mins">00</span>
+        <span class="countdown-unit">Mins</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-block">
+        <span class="countdown-num" id="cd-secs">00</span>
+        <span class="countdown-unit">Secs</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ornament-line"><div class="ornament-diamond"></div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <div class="section-title-wrap">
+      <span class="section-overline">About the Conference</span>
+      <h2 class="section-title">Conference Scope</h2>
+    </div>
+  </div>
+
+  <div class="about-grid reveal">
+    <div class="about-text">
+
+      <p>
+        The conference aims to produce scientifically validated and integrative knowledge on the role of medicinal leeches (genus Hirudo) in biodiversity conservation and ecosystem processes, with a particular emphasis on their geographical distribution, spatial ecology, and environmental interactions. This scientific forum will provide a comprehensive interdisciplinary platform that combines zoology, medical biology, ecology, biogeography, environmental sciences, and geoinformatics.
+      </p>
+
+    </div>
+    <div class="about-facts">
+      <div class="fact-row">
+        <span class="fact-label">Conference date</span>
+        <span class="fact-value">May 8, 2026</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Duration</span>
+        <span class="fact-value">1 Full Day</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Format</span>
+        <span class="fact-value">Fully Online</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Platform</span>
+        <span class="fact-value">Zoom</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Expected participants</span>
+        <span class="fact-value">250</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Submissions open</span>
+        <span class="fact-value">Abstract/Full paper</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Registration</span>
+        <span class="fact-value">Free of charge</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TOPICS -->
+<section>
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <div class="section-title-wrap">
+      <span class="section-overline">Scientific Programme</span>
+      <h2 class="section-title">Main Themes</h2>
+    </div>
+  </div>
+  <div class="topics-grid reveal">
+    <div class="topic-card">
+      <span class="topic-icon">🧬</span>
+      <div class="topic-title">Biodiversity &amp; Conservation</div>
+      <p class="topic-desc">Biodiversity assessment and conservation importance of medicinal leeches (Hirudo spp.) across natural habitats.</p>
+    </div>
+    <div class="topic-card">
+      <span class="topic-icon">🌊</span>
+      <div class="topic-title">Ecological Functions</div>
+      <p class="topic-desc">Ecological functions and ecosystem-level interactions of leeches in freshwater and terrestrial environments.</p>
+    </div>
+    <div class="topic-card">
+      <span class="topic-icon">🗺️</span>
+      <div class="topic-title">Geographical Distribution</div>
+      <p class="topic-desc">Geographical distribution, biogeography, and habitat analysis across global and regional scales.</p>
+    </div>
+    <div class="topic-card">
+      <span class="topic-icon">🔬</span>
+      <div class="topic-title">Medical &amp; Zoological Significance</div>
+      <p class="topic-desc">Medical and zoological significance including hirudotherapy, bioactive compounds, and clinical applications.</p>
+    </div>
+    <div class="topic-card">
+      <span class="topic-icon">🌡️</span>
+      <div class="topic-title">Environmental Change &amp; Adaptation</div>
+      <p class="topic-desc">Environmental change impacts on leech populations and their adaptive responses to shifting ecosystems.</p>
+    </div>
+    <div class="topic-card">
+      <span class="topic-icon">🛡️</span>
+      <div class="topic-title">Conservation Strategies</div>
+      <p class="topic-desc">Conservation strategies and sustainable management practices for medicinal and ecological leech species.</p>
+    </div>
+    <div class="topic-card">
+      <span class="topic-icon">🌿</span>
+      <div class="topic-title">Plant–Leech Interactions</div>
+      <p class="topic-desc">Plant–leech interactions in aquatic ecosystems — habitat dependencies, refugia, and trophic relationships.</p>
+    </div>
+  </div>
+</section>
+
+<div class="ornament-line"><div class="ornament-diamond"></div></div>
+
+<!-- ORGANIZERS -->
+<section id="organizers">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <div class="section-title-wrap">
+      <span class="section-overline">Scientific Committee</span>
+      <h2 class="section-title">Organizers</h2>
+    </div>
+  </div>
+  <div class="org-grid reveal">
+
+
+    <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/bioresurs-logo.png" alt="Organization logo" class="org-logo">
+      </div>
+      <div class="org-name">AR SEM Ganja Bioresources Institute</div>
+    </div>
+
+    <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/Fırat_University_logo.png" alt="Organization logo" class="org-logo">
+      </div>
+      <div class="org-name">Firat University</div>
+    </div>
+
+        <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/etei-logo.jpg" alt="Organization logo" class="org-logo">
+      </div>
+      <div class="org-name">AR SEM Ganja Ecology and Natural Resources Institute</div>
+    </div>
+
+        <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/ekoenergy-logo.png" alt="Organization logo" class="org-logo">
+      </div>
+      <div class="org-name">International Eco Energy Academy</div>
+    </div>
+
+        <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/agroproblem-logo.png" alt="Organization logo" class="org-logo">
+      </div>
+      <div class="org-name">AR SEM Ganja Agrarian Problems Institute</div>
+    </div>
+
+        <!-- Карточка: замени src и название -->
+    <!-- <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/org-logo-1.png" alt="Organization logo" class="org-logo">
+      </div>
+      <div class="org-name">Organization Name</div>
+    </div> -->
+
+    <!-- Placeholder — убери когда добавишь реальную карточку -->
+    <div class="org-card org-card-placeholder">
+      <div class="org-logo-wrap">
+        <span class="org-logo-plus">+</span>
+      </div>
+      <div class="org-name">To be announced</div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PARTICIPANTS -->
+<section id="participants">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <div class="section-title-wrap">
+      <span class="section-overline">Invited Speakers</span>
+      <h2 class="section-title">Participants</h2>
+    </div>
+  </div>
+  <div class="people-grid reveal">
+
+    <!-- Карточка спикера: замени src, имя, роль, аффилиацию -->
+    <div class="person-card">
+      <div class="person-avatar">
+        <img src="images/speaker-ferri.jpg" alt="Prof. Roberto Ferri">
+      </div>
+      <div class="person-name">Prof. Roberto Ferri</div>
+      <div class="person-role">Keynote Speaker</div>
+      <div class="person-affil">University of Bologna · Ecology &amp; Systematics</div>
+    </div>
+
+    <!-- Placeholder: ожидается спикер -->
+    <div class="person-card person-card-placeholder">
+      <div class="person-avatar person-avatar-empty">
+        <span>+</span>
+      </div>
+      <div class="person-name">To be announced</div>
+      <div class="person-role">Speaker</div>
+      <div class="person-affil">Institution · Country</div>
+    </div>
+
+    <!-- Placeholder: открытая регистрация -->
+    <div class="person-card person-card-placeholder">
+      <div class="person-avatar person-avatar-empty">
+        <span>+</span>
+      </div>
+      <div class="person-name">Open Registration</div>
+      <div class="person-role">Participant</div>
+      <div class="person-affil">Register to join the conference</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="ornament-line"><div class="ornament-diamond"></div></div>
+
+<!-- TECHNICAL -->
+<section id="tech">
+  <div class="section-header reveal">
+    <span class="section-num">05</span>
+    <div class="section-title-wrap">
+      <span class="section-overline">Infrastructure &amp; Support</span>
+      <h2 class="section-title">Technical Department</h2>
+    </div>
+  </div>
+  <div class="tech-grid reveal">
+    <div class="tech-card">
+      <span class="tech-icon">🎥</span>
+      <div>
+        <div class="tech-name">Streaming &amp; Broadcast</div>
+        <div class="tech-role">Live Production</div>
+        <div class="tech-desc">Management of Zoom sessions, live streaming setup, recording, and real-time technical support.</div>
+      </div>
+    </div>
+    <div class="tech-card">
+      <span class="tech-icon">🌐</span>
+      <div>
+        <div class="tech-name">Web &amp; Digital</div>
+        <div class="tech-role">Online Infrastructure</div>
+        <div class="tech-desc">Website maintenance, registration platform, abstract submission system, and digital communications.</div>
+      </div>
+    </div>
+    <div class="tech-card">
+      <span class="tech-icon">🛡️</span>
+      <div>
+        <div class="tech-name">Security &amp; Access</div>
+        <div class="tech-role">Event Security</div>
+        <div class="tech-desc">Participant authentication, secure meeting links, access control, and anti-disruption protocols.</div>
+      </div>
+    </div>
+    <div class="tech-card">
+      <span class="tech-icon">📊</span>
+      <div>
+        <div class="tech-name">Data &amp; Archives</div>
+        <div class="tech-role">Documentation</div>
+        <div class="tech-desc">Session recordings, abstract archive, post-conference proceedings preparation and distribution.</div>
+      </div>
+    </div>
+    <div class="tech-card person-card-placeholder" style="border-style:dashed;">
+      <span class="tech-icon" style="opacity:0.4">+</span>
+      <div>
+        <div class="tech-name" style="color:var(--text3); font-style:italic">Volunteer Position</div>
+        <div class="tech-role">Technical Support</div>
+        <div class="tech-desc" style="color:var(--text3)">We are looking for volunteers to join the technical team. Get in touch!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- COLLABORATORS -->
+
+<!-- 
+Recep Tayyip Erdoğan University, Rize, Türkiye
+Riau University, Pekanbaru, Indonesia
+Tunis El Manar University, Tunis, Tunisia
+Universidad Complutense de Madrid, Spain, MadridFirst 
+Research İnstitute of Fruit and Tea Growing, Guba, Azerbaijan
+Alexandru Ioan Cuza University of Iaşi, Iaşi, Romania
+ -->
+
+<section id="collaborators">
+  <div class="section-header reveal">
+    <span class="section-num">06</span>
+    <div class="section-title-wrap">
+      <span class="section-overline">Partners &amp; Supporters</span>
+      <h2 class="section-title">Collaborators</h2>
+    </div>
+  </div>
+  <div class="org-grid reveal">
+
+    <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/rteuni-logo.png" alt="Collaborator logo" class="org-logo">
+      </div>
+      <div class="org-name">Recep Tayyip Erdoğan University,</div>
+      <div class="org-name">Rize, Türkiye</div>
+
+    </div>
+
+    <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/Universitas_Riau_logo.png" alt="Collaborator logo" class="org-logo">
+      </div>
+      <div class="org-name">Riau University,</div>
+      <div class="org-name">Pekanbaru, Indonesia</div>
+
+    </div>
+    
+        <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/logo-tunis-manar.png" alt="Collaborator logo" class="org-logo" style="padding: 20px;">
+      </div>
+      <div class="org-name">Tunis El Manar University,</div>
+      <div class="org-name">Tunis, Tunisia</div>
+
+    </div>
+
+        <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/Escudo_de_la_Universidad_Complutense_de_Madrid.svg.png" alt="Collaborator logo" class="org-logo">
+      </div>
+      <div class="org-name">Universidad Complutense de Madrid,</div>
+      <div class="org-name">Spain</div>
+
+    </div>
+
+        <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/mceti.avif" alt="Collaborator logo" class="org-logo">
+      </div>
+      <div class="org-name">Research İnstitute of Fruit and Tea Growing</div>
+      <div class="org-name">Guba, Azerbaijan</div>
+
+    </div>
+
+        <!-- Карточка: замени src и название -->
+    <div class="org-card">
+      <div class="org-logo-wrap">
+        <img src="images/BIOLOGIEUAICIASI.png" alt="Collaborator logo" class="org-logo" style="padding: 20px;">
+      </div>
+      <div class="org-name">Alexandru Ioan Cuza University of Iaşi,</div>
+      <div class="org-name">Romania</div>
+
+    </div>
+
+
+    <!-- Placeholder -->
+    <div class="org-card org-card-placeholder">
+      <div class="org-logo-wrap">
+        <span class="org-logo-plus">+</span>
+      </div>
+      <div class="org-name">Become a Partner</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="ornament-line"><div class="ornament-diamond"></div></div>
+
+<!-- PROGRAM PREVIEW -->
+<section id="program">
+  <div class="section-header reveal">
+    <span class="section-num">07</span>
+    <div class="section-title-wrap">
+      <span class="section-overline">May 8, 2026 · UTC+0</span>
+      <h2 class="section-title">Programme Overview</h2>
+    </div>
+  </div>
+  <div class="program-list reveal">
+    <div class="program-item">
+      <span class="program-time">09:00</span>
+      <span class="program-event">Opening Ceremony &amp; Welcome Address</span>
+      <span class="program-type keynote">Keynote</span>
+    </div>
+    <div class="program-item">
+      <span class="program-time">09:30</span>
+      <span class="program-event">Keynote Lecture: Global Diversity of Hirudinea</span>
+      <span class="program-type keynote">Keynote</span>
+    </div>
+    <div class="program-item">
+      <span class="program-time">10:30</span>
+      <span class="program-event">Session I — Biodiversity &amp; Taxonomy</span>
+      <span class="program-type session">Session</span>
+    </div>
+    <div class="program-item">
+      <span class="program-time">12:00</span>
+      <span class="program-event">Lunch Break &amp; Networking</span>
+      <span class="program-type">Break</span>
+    </div>
+    <div class="program-item">
+      <span class="program-time">13:00</span>
+      <span class="program-event">Session II — Ecological Functions &amp; Conservation</span>
+      <span class="program-type session">Session</span>
+    </div>
+    <div class="program-item">
+      <span class="program-time">14:30</span>
+      <span class="program-event">Session III — Medical-Zoological Significance</span>
+      <span class="program-type session">Session</span>
+    </div>
+    <div class="program-item">
+      <span class="program-time">16:00</span>
+      <span class="program-event">Session IV — Geographical Distribution</span>
+      <span class="program-type session">Session</span>
+    </div>
+    <div class="program-item">
+      <span class="program-time">17:30</span>
+      <span class="program-event">Panel Discussion &amp; Closing Remarks</span>
+      <span class="program-type keynote">Keynote</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2 class="cta-title">Reserve Your Spot</h2>
+  <p class="cta-sub">Join researchers from around the world for a day of discovery.</p>
+  <a href="#" class="btn-primary">Register Now</a>
+  <a href="#" class="btn-secondary">Submit Abstract</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <em>LeechConf</em> 2026
+  </div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#program">Programme</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 LeechConf · All rights reserved</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
