@@ -109,6 +109,45 @@ position: relative;
 overflow: hidden;
 }
 
+.hero-countries {
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards 0.55s;
+}
+
+.hero-countries-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 18px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.hero-countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+}
+
+.hero-country {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fi {
+  width: 1.4em;
+  height: 1em;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
 .hero-bg-img {
   position: absolute;
   inset: 0;
@@ -361,6 +400,7 @@ font-size: 1.15rem;
 color: var(--text2);
 margin-bottom: 20px;
 font-weight: 300;
+text-align: justify;
 }
 
 .about-text p:first-child {
@@ -407,6 +447,12 @@ background: var(--border);
 border: 1px solid var(--border);
 }
 
+.topics-grid {
+  justify-items: center;
+}
+
+
+
 .topic-card {
 background: var(--bg2);
 padding: 36px 32px;
@@ -429,6 +475,11 @@ transition: transform 0.4s ease;
 }
 
 .topic-card:hover::after { transform: scaleX(1); }
+
+.topic-card:nth-last-child(-n+2):first-child,
+.topic-card:nth-last-child(-n+2):first-child ~ .topic-card {
+  max-width: 100%;
+}
 
 .topic-icon {
 font-size: 1.5rem;
@@ -732,6 +783,80 @@ color: var(--text2);
 font-style: italic;
 margin-bottom: 40px;
 position: relative;
+}
+
+/* ── CTA CONTACTS ── */
+.cta-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  position: relative;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text2);
+  transition: color 0.3s;
+}
+
+.contact-link i {
+  font-size: 1rem;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s, color 0.3s;
+  flex-shrink: 0;
+}
+
+.contact-link--fb:hover  { color: #1877f2; }
+.contact-link--fb:hover i { border-color: #1877f2; color: #1877f2; }
+
+.contact-link--wa:hover  { color: #25d366; }
+.contact-link--wa:hover i { border-color: #25d366; color: #25d366; }
+
+.contact-link--email:hover  { color: var(--gold); }
+.contact-link--email:hover i { border-color: var(--gold); color: var(--gold); }
+
+/* ── FOOTER CONTACTS ── */
+.footer-contacts {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-contact-icon {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text3);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.footer-contact-icon:hover {
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .btn-primary {
